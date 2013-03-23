@@ -17,7 +17,9 @@
     });
   });
 
-  http.createServer(app).listen("5000", function() {
+  var port = process.env.PORT || 5000;
+
+  http.createServer(app).listen(port, function() {
     return console.log("Express server listening on port 5000");
   });
 
