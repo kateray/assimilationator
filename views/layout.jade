@@ -1,0 +1,16 @@
+!!!5
+html
+  head
+    title #{title} - My Site
+    != css('application')
+  body
+    header
+      h1 The Assimilationator
+    .column
+      .container#weak(contenteditable=true)
+      button
+        | Man up
+    .column
+      .container#strong
+    != js('lib/jquery')
+    != js('app')

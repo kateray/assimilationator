@@ -1,0 +1,30 @@
+body {
+  font-family: Helvetica;
+  background: #f2f2f2;
+}
+h1 {
+  font-size: 20px;
+}
+
+.highlight {
+  background: #b1d7ff;
+}
+.column {
+  float:left;
+  width: 40%;
+  margin: 5%;
+}
+.container {
+  outline: none;
+  min-height: 200px;
+  height: auto;
+  padding: 1em;
+}
+
+#weak {
+  background: #ffd3d3;
+}
+
+#strong {
+  background: #ccfffd;
+}
