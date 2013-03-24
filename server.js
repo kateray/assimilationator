@@ -10,7 +10,8 @@
   app.set('view engine', 'jade');
 
   app.use(require('connect-assets')());
-
+  app.use(express.static(__dirname + '/public'));
+  
   app.get("/", function(req, res) {
     return res.render('layout', {
       title: 'Home'

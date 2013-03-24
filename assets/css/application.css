@@ -1,24 +1,98 @@
 body {
   font-family: Helvetica;
   background: #f2f2f2;
+  text-align: center;
+  margin: 2% 5%;
+
 }
-h1 {
-  font-size: 20px;
+
+#container {
+  min-height: 200px;
+  height: auto;
+  width: 100%;
+  margin-top: 5%;
+}
+
+#container:after{
+  clear:both;
+}
+
+header {
+  font-style: italic;
+}
+.brand {
+  font-size: 3em;
+  font-weight: bold;
+  display: inline;
+  font-family: 'Impact';
+}
+
+.super {
+  display: inline;
+  font-size: 0.5em;
+  position: relative;
+  top: -3em;
+  left: 1em;
+}
+
+.sub-1 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.sub-2 {
+  display: inline;
+  position: absolute;
+  right: 4em;
+  font-size: 1em;
 }
 
 .highlight {
-  background: #b1d7ff;
+  background: #f61919;
+}
+.mad-cat {
+  background: #f61919;
+  background-image: url("/images/mad_cat.gif");
 }
 .column {
   float:left;
-  width: 40%;
-  margin: 5%;
 }
-.container {
+.column.small {
+  width: 10%
+}
+
+.column.large {
+  width: 45%;
+}
+
+#magic {
+  cursor: pointer;
+  position: relative;
+  width: 0;
+  height: 0;
+  border-top: 5em solid #f2f2f2;
+  border-bottom: 5em solid #f2f2f2;
+  border-left: 6em solid transparent;
+  opacity: 0.6;
+  background: #8C8C8C;
+  background-image: url("/images/test.png");
+}
+
+#magic:hover {
+  opacity: 1;
+}
+
+#magic img {
+  width: 5em;
+  position: relative;
+  left: -6em;
+  top: -1em;
+}
+.text-container {
   outline: none;
+  padding: 1em;
+  text-align: left;
   min-height: 200px;
   height: auto;
-  padding: 1em;
 }
 
 #weak {
